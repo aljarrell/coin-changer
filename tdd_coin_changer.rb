@@ -31,4 +31,8 @@ class My_test < Minitest::Test
     assert_equal({"dimes" => 1}, coin(10))
   end
 
+  def test_for_quarter
+    assert_equal({}, coin(25))
+  end
+
 end
