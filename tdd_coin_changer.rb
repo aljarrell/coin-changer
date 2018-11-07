@@ -11,4 +11,8 @@ class My_test < Minitest::Test
     assert_equal(Hash, coin.class)
   end
 
+  def test_for_one_penny
+    assert_equal({}, coin(1))
+  end
+
 end
