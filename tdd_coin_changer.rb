@@ -7,4 +7,8 @@ class My_test < Minitest::Test
     assert_equal(1,1)
   end
 
+  def test_hash
+    assert_equal(Hash, coin.class)
+  end
+
 end
