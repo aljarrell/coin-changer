@@ -23,4 +23,8 @@ class My_test < Minitest::Test
     assert_equal({"penny" => 3}, coin(3))
   end
 
+  def test_for_nickel
+    assert_equal({}, coin(5))
+  end
+
 end
