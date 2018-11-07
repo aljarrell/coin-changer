@@ -32,7 +32,7 @@ class My_test < Minitest::Test
   end
 
   def test_for_quarter
-    assert_equal({}, coin(25))
+    assert_equal({"quarters" => 1}, coin(25))
   end
 
 end
