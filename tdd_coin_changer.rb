@@ -8,11 +8,11 @@ class My_test < Minitest::Test
   end
 
   def test_hash
-    assert_equal(Hash, coin.class)
+    assert_equal(Hash, coin(1).class)
   end
 
   def test_for_one_penny
-    assert_equal({}, coin(1))
+    assert_equal({"penny" => 1}, coin(1))
   end
 
 end
