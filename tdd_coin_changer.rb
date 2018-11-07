@@ -27,4 +27,8 @@ class My_test < Minitest::Test
     assert_equal({"nickels" => 1}, coin(5))
   end
 
+  def test_for_dime
+    assert_equal({}, coin(10))
+  end
+
 end
