@@ -12,19 +12,19 @@ class My_test < Minitest::Test
   end
 
   def test_for_one_penny
-    assert_equal({"penny" => 1}, coin(1))
+    assert_equal({"pennies" => 1}, coin(1))
   end
 
   def test_for_two_penny
-    assert_equal({"penny" => 2}, coin(2))
+    assert_equal({"pennies" => 2}, coin(2))
   end
 
   def test_for_three_penny
-    assert_equal({"penny" => 3}, coin(3))
+    assert_equal({"pennies" => 3}, coin(3))
   end
 
-  def test_for_nickel
-    assert_equal({}, coin(5))
-  end
+  # def test_for_nickel
+  #   assert_equal({}, coin(5))
+  # end
 
 end
