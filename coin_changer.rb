@@ -1,0 +1,3 @@
+def coin()
+{}
+end
