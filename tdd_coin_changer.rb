@@ -16,7 +16,7 @@ class My_test < Minitest::Test
   end
 
   def test_for_two_penny
-    assert_equal({}, coin(2))
+    assert_equal({"penny" => 2}, coin(2))
   end
 
 end
