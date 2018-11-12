@@ -47,4 +47,8 @@ class My_test < Minitest::Test
     assert_equal({"quarters" => 3, "dimes" => 2, "pennies" => 4}, coin(99))
   end
 
+  def test_for_million
+    assert_equal({"quarters" => 40000}, coin(1000000))
+  end
+
 end
