@@ -43,4 +43,8 @@ class My_test < Minitest::Test
     assert_equal({"quarters" => 3, "nickels" => 1}, coin(80))
   end
 
+  def test_for_ninety_nine
+    assert_equal({"quarters" => 3, "dimes" => 2, "pennies" => 4}, coin(99))
+  end
+
 end
